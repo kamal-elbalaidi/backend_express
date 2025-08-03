@@ -1,0 +1,8 @@
+{
+  "found": "User(s) found.",
+  "not_found": "User not found.",
+  "already_exists": "User already exists.",
+  "invalid_credentials": "Invalid login credentials.",
+  "account_locked": "Account temporarily locked.",
+  "account_created": "Account created successfully."
+}

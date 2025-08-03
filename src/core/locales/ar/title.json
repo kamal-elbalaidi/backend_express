@@ -1,0 +1,10 @@
+{
+  "db_connection_failed": "خطأ في الاتصال",
+  "db_query_failed": "خطأ في الاستعلام",
+  "not_found": "غير موجود",
+  "server_error": "خطأ في الخادم",
+  "bad_request": "طلب غير صالح",
+  "duplicate_entry": "مورد مكرر",
+  "unauthorized": "غير مصرح",
+  "forbidden": "ممنوع"
+}

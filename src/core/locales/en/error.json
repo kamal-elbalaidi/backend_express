@@ -1,0 +1,10 @@
+{
+  "not_found": "The requested resource was not found.",
+  "server_error": "An unexpected server error occurred.",
+  "db_query_failed": "Database query failed.",
+  "db_connection_failed": "Database connection failed.",
+  "bad_request": "The request data is invalid.",
+  "duplicate_entry": "The resource already exists.",
+  "unauthorized": "You are not authorized to access this resource.",
+  "forbidden": "You do not have permission to perform this action."
+}

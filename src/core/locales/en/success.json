@@ -1,0 +1,7 @@
+{
+  "operation_completed": "The operation was completed successfully.",
+  "user_created": "The user has been created successfully.",
+  "user_updated": "The user data has been updated successfully.",
+  "user_deleted": "The user has been deleted successfully.",
+  "data_fetched": "Data fetched successfully."
+}

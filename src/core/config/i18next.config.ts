@@ -10,11 +10,11 @@ i18next
     fallbackLng: "en",
     preload: ["en", "ar"],
     backend: {
-      loadPath: path.join(__dirname, "../locales/{{lng}}.json"),
+      loadPath: path.join(__dirname, "../locales/{{lng}}/{{ns}}.json"),
     },
+    ns: ["success", "error", "title", "field", "user"],
     detection: {
       order: ["header"],
-      // order: ["querystring", "header"], /* "header" -> lng */
       caches: false,
     },
     debug: false,

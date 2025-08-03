@@ -1,12 +1,13 @@
+import { HttpStatus } from "../constants/http-status";
 import { HttpException } from "./exception.http";
 
 export class NotFoundException extends HttpException {
   constructor(
-    message = "common.not_found",
+    message = "error:not_found",
     errors?: { field?: string; title: string }[]
   ) {
-    const formattedErrors = errors ? [...errors] : [{ field: "resource", title: "user.not_found" }];
-    super(404, message, formattedErrors);
+    const formattedErrors = errors ? [...errors] : [{ field: "field:resource", title: "title:not_found" }];
+    super(HttpStatus.not_found, message, formattedErrors);
   }
 }
 
@@ -15,27 +16,27 @@ export class ConflictException extends HttpException {
     message = "common.duplicate_entry",
     errors?: { field?: string; title: string }[]
   ) {
-    const formattedErrors = errors ? [...errors] : [{ field: "resource", title: "common.duplicate_entry" }];
-    super(409, message, formattedErrors);
+    const formattedErrors = errors ? [...errors] : [{ field: "field:resource", title: "error:duplicate_entry" }];
+    super(HttpStatus.conflict, message, formattedErrors);
   }
 }
 
 export class BadRequestException extends HttpException {
   constructor(
-    message = "common.bad_request",
+    message = "error:bad_request",
     errors?: { field?: string; title: string }[]
   ) {
-    const formattedErrors = errors ? [...errors] : [{ field: "request", title: "common.bad_request" }];
-    super(400, message, formattedErrors);
+    const formattedErrors = errors ? [...errors] : [{ field: "field:request", title: "error:bad_request" }];
+    super(HttpStatus.bad_request, message, formattedErrors);
   }
 }
 
 export class InternalServerErrorException extends HttpException {
   constructor(
-    message = "common.server_error",
+    message = "error:server_error",
     errors?: { field?: string; title: string }[]
   ) {
-    const formattedErrors = errors ? [...errors] : [{ field: "server", title: "common.server_error" }];
-    super(500, message, formattedErrors);
+    const formattedErrors = errors ? [...errors] : [{ field: "field:server", title: "error:server_error" }];
+    super(HttpStatus.internal_server_error, message, formattedErrors);
   }
 }

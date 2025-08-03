@@ -1,0 +1,9 @@
+{
+  "server": "Server",
+  "database": "Database",
+  "user": "User",
+  "email": "Email",
+  "password": "Password",
+  "username": "Username",
+  "resource": "Resource"
+}
